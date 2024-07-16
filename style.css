@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.continer{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --cmn-font:"Ubuntu", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+}
+/* head */
+header{
+    background-color: #0f2f44;
+}
+header .continer .row{
+    justify-content: space-between;
+}
+header .continer .row span{
+    color: #fff;
+    padding: 19px 0px;
+    display: inline-block;
+    font-family: var(--cmn-font);
+    font-size: 16px;
+}
+
+/* head end */
+/* nav */
+#nav{
+background-color: #fff;
+}
+#nav .continer .row{
+    align-items: center;
+    justify-content: space-between;
+}
+#nav ul li{
+    display: inline-block;
+    padding: 20px 20px;
+}
+#nav ul li a{
+    display: inline-block;
+    font-family: var(--cmn-font);
+    font-size: 16px;
+    font-weight: 500;
+
+}
+#nav ul li:hover{
+    background-color:#fff9e6;
+    color:#ffc712;
+    
+}
+nav ul li a:hover{
+    color:#ffc712;
+}
+
+#nav ul li:last-child{
+    display:inline-block;
+    padding-right: 0 !important;
+   
+}
+#nav ul li:nth-child(8) span,#nav ul li:nth-child(7) span{
+    height: 30PX;
+    width: 30PX;
+    border-radius: 50%;
+    border: 1px solid #999999;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: #999999;
+}
+
+/* nav */
+/* BANNAR START */
+#bannar{
+    background-image: url(./img/bannar.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+#bannar .continer .row{
+    flex-direction: column;
+    align-content: center;
+    height: 600px;
+    width: 470px;
+    justify-content: center;
+
+}
+#bannar .row h3{
+    font-size:50px;
+    font-family: var(--cmn-font);
+    color: #0f2f44;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+#bannar .row h2{
+    font-size: 80px;
+    font-weight: 400;
+    font-family:"Abril Fatface", serif; 
+    color: #0f2f44;
+    padding-top: 12px;
+}
+#bannar .row h4{
+    font-family: var(--cmn-font);
+    font-size: 32px;
+    color: #8484bf;
+    letter-spacing: 16px;
+    padding: 16px 0 30px 0;
+
+}
+#bannar .row p{
+    font-size: 14px;
+    font-family: serif;
+    line-height: 24px;
+    padding-bottom: 30px;
+}
+
+#bannar .btn_grp a{
+    display: inline-block;
+    padding:15px 16px;
+    background-color: #8383bf;
+    font-family: var(--cmn-font);
+    font-size: 20px;
+    color: #fff;
+    margin-right: 20px;
+    position: relative;
+}
+#bannar .btn_grp a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    background-color: #04040e;
+    top:0;
+    left:0;
+    transition: 1s ;
+}
+#bannar .btn_grp a:hover::after{
+    width: 100%;
+
+}
+
+#bannar .btn_grp a::before{
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    background-color: #04040e;
+    bottom:0;
+    right:0;
+    transition: 1s ;
+}
+#bannar .btn_grp a:hover::before{
+    width: 100%;
+}
+
+.btn_grp{
+    display: flex;
+    align-items: center;
+}
+.btn_grp img{
+    margin-top: 10px;
+}
+.btn_grp img:hover{
+    box-shadow: 0px 0px 30px red;
+}
+/* BANNAR END */
+/* about start */
+#about .contains{
+  display: flex;
+  padding: 100px 0 100px 0;
+}
+#about .box h5{
+    font-family: var(--cmn-font);
+    font-weight: 200px;
+    font-size: 14px;
+    color: #0f2f44;
+}
+#about .box h2{
+    font-family:"Abril Fatface";
+    font-size: 32px;
+    font-weight:400;
+    color: #0f2f44;
+    padding:9px 0 40px 0 ;
+}
+#about .box p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #0f2f44;
+    font-weight: 400;
+    font-family: "Open Sans";
+
+}
+#about .box ul{
+     padding:35px;
+
+}
+#about .box ul li{
+    font-size: 16px;
+     line-height: 44px;
+    color: #0f2f44;
+    font-weight: 400;
+    font-family: "Open Sans";
+
+    
+}
+#about .box .btn-grp a{
+    
+    padding: 15px 20px;
+    border-radius: 5px;
+    filter: drop-shadow(0px 7px 10px rgba(255,199,18,0.25));
+    background-color: #ffc712;
+    margin-left: 15px;
+}
+#about .box .btn-grp a:last-child:hover{
+    filter: drop-shadow(0px 7px 10px rgba(255,199,18,0.25));
+    background-color: #fff;
+    margin-left: 15px;
+    padding: 15px 20px;
+}
+
